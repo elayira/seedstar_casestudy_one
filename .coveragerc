@@ -1,0 +1,5 @@
+[run]
+include = seedstar_casestudy_one/*
+omit = *migrations*, *tests*
+plugins =
+    django_coverage_plugin
