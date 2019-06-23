@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+{% load static i18n %}
+{% block title %}Email List{% endblock %}
+
+{% block content %}
+<div class="container">
+  <h2>Emails</h2>
+
+  <div class="list-group">
+    
+      <ul>
+            {% for email in emaillist_list %}
+            <li>{{ email.name }} => {{ email.email }}</li>
+          {% endfor %}
+      </ul>
+    
+  </div>
+</div>
+{% endblock content %}

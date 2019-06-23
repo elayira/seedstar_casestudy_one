@@ -1,1 +1,20 @@
 {% extends "base.html" %}
+
+{% block content %}
+    <p class="h1 align-middle text-center text-capitalize" style="padding-bottom: 100px">Welcome to the Email Storage Application</p>
+    <div class="main">
+        <h3 class="text-center">ASSUMPTIONS</h1>
+        <p class="text-center text-capitalize small">Below is a list of the assumptions made on this project</p><hr />
+        <ul>
+            <li>A user of the application should only have one email address</li>
+            <li>Admin should be able to access the data through the default django admin dashboard</li>
+            <li>Email addresses and their corresponding name will not be associated with any particular user.</li>
+            <li>The application will not handle any media file in production.</li>
+            <li>Email  addresss should be unique throughout the system</li>
+            <li>The database vendor will be used in both developemnt and production</li>
+            <li>Scaling up the application should be easy</li>
+            <li>The development environment should not be dependent on the developer's system</li>
+            <li>I assumed that the code must decoupled enough to enable unit testing</li>
+        </ul>
+    </div>
+{% endblock content %}
